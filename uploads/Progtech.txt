@@ -1,0 +1,143 @@
+ 
+
+Jegyzet:
+https://www.researchgate.net/publication/350740309_Programozasi_technologiak_A_program_kodja_allandoan_valtozik
+vagy:
+http://aries.ektf.hu/~gkusper/ProgTechKonyv.v.1.3.2.pdf
+
+Videók:
+2022.02.11.
+		1.rész: https://youtu.be/Vyy1fLyAIso
+		2.rész: https://youtu.be/SZSvDBo_LHw
+2022.02.26.
+		1.rész: https://youtu.be/m-39DQIphWE
+	2.rész: https://youtu.be/tpnPokrgths
+2022.03.12.
+	1.rész: https://youtu.be/K2EG_rDDeNY, Template Method?
+		2.rész: https://youtu.be/NzNQMpSk1C0, Template Method?
+	2022.03.19.
+		1.rész: https://youtu.be/7Lf3LgAHMx0
+2.rész: https://youtu.be/HhOckvbY7p8
+
+Gyakorlati anyagok:
+ProgTech gyakorlat
+2022.03.01.: https://pastebin.com/0m522t2J
+2022.05.14.:
+Binfa(composite):  https://drive.google.com/file/d/17ALEFN0cshKlj82h1WooCQZUPhOpdss5/view
+A Drive-os Binfa.cs hibás a Maxdebth metódusnál az if-ben a Max szerepel.
+-	ugyanaz(javított): https://pastebin.com/nRASYGj4
+-	ugyanaz(javított): https://pastebin.com/AyyVHUK8
+ Ez C#10-ben írva (csak NET6-tal létrehozott projecttel működik, NET6 alatt nincs alapból namespace és Program class, ezeket futás közben generálja le nekünk, a legtöbbet használt névtereket pedig automatikusan engedi használni using nélkül. A namespace és Program class egyébként bármikor hozzáadható.)
+Visitor tervezési minta:
+https://drive.google.com/file/d/13fmUio1h1XUoclRvNS6Gav7Gah-Ja4rH/view
+A Drive-os vegso.cs hibás a Maxdebth metódusnál az if-ben a Max szerepel.
+-	ugyanaz(javított): https://pastebin.com/M8UyxaXm
+-	ugyanaz(javított, C#10, NET6): https://pastebin.com/wrq0y7PS
+
+
+
+ 
+Tanárszakosok esetén a fordításokat koordinálja:  Füller Tamás, email: fullertamas87@gmail.com
+Gazdinfo esetén a fordításokat koordinálja:  Beluscsák Ádám, email: adam.beluscsak@gmail.com
+
+PTI esetén a fordításokat koordinálja:  ???, email: ???
+Wikipédia fordítás kiválasztásához a link:Joel teszt
+https://docs.google.com/spreadsheets/d/1ogxN1z9CR8mxKRVpBzuP_MRZsjioATR0_0bh4RGCDvU/edit?usp=sharing
+
+
+Segítség a unit tesztes beugróhoz:
+unit tesztek C#-ban:
+https://pastebin.com/FRrFuwsD
+Ehhez tartozó üzemi kód:
+https://pastebin.com/Zsrs00VL
+Ez egy stratégia tervezési mintát használ, méghozzá olyat, amiben van IF. Ez elvileg tilos a stratégia tervezési mintában, ezért érdekes. Ha jobban mögé néznek a kódnak, akkor azt látják, hogy azért van IF, mert nem egy stratégia van, hanem egy lista. Tehát ez nagyon érdekes, lehet belőle szakdolgozat írni. Lehetséges szakdolgozati téma: Feltételes stratégia tervezési minta fejlesztése.
+
+Template tervezési mintára példa:
+https://tinyurl.com/progtechtemplatedesignpattern 
+
+
+A 2021/22 II. félévében a progtech vizsgára mindenkinek a következő 7
+témából 3-at kell kidolgoznia legalább 1-1 oldalas esszé formájában:
+A kód komplexitás mérésének jelentősége, lehetőségei, a CC metrika
+A CC metrika megértése példákon keresztül
+Mikor nevezhető egy szoftverfejlesztő cég modernek, a  jelentősége, a Joel teszt 2022-ből nézve, az általam ismert szoftverfejlesztő cégek mennyire modernek
+Módszertanok jelentősége, a "Nacked Chef" Joel cikk értelmezése, a SCRUM mint modern módszertan, elavult a SCRUM?, mi jön a SCRUM után?, miért használjunk Kanban-t, ha azt a termelésre és nem a szoftvergyártásra találták ki?
+Tetszőleges választott Joel on Software cikk összefoglalása. Aktuális még Joel? Kit kövessek inkább a Youtube-on?/
+Craftsmanship, avagy milyen a jó munkás szoftverfejlesztő, a craftsmanship, amit én tudok róla
+ A Log4 Shell sebezhetőség története, jelentősége, amit én gondolok erről
+
+
+vizsga menete: (kb.4 óra)
+Könyv élménybeszámoló (3 kötelező könyvről kell mesélni → Mi tetszett? Mi nem tetszett?) - Kiváltható a Tiszta Kód második fele fordítással gazdinfós, tanár szakos, PTI-s hallgatóknak is
+A Head First Design Pattern c. könyv helyett lehet videókat nézni, link: https://www.youtube.com/watch?v=v9ejT8FO-7I
+Tiszta kód c. könyv helyett lehet Uncle Bob videókat (nem ingyenes)
+Tiszta Kód
+Head First Design Pattern
+Túlélőkönyv programozóknak
+Scrum és XP a frontvonalból
+Kanban és SCRUM mindkettőből a legjobbat
+Esszék átnézése
+Unit teszt írás → nehézségi szint:  public double GetAlmaÁr(double kg)
+1 paramétere van, hogy hány kilót veszünk, és 1 dolgot ad vissza: az alma árát. Egyetlen csavar van benne, hogy minél több almát veszünk annál több kedvezményt kapunk. Legalább 5 kg alma vásárlása esetén a kedvezmény 10%, 20kg, vagy a felett 15%. 1 kg alma ára 400Ft.- Ez kiváltható a gazdinfós és tanár szakos hallgatók részére fordítással.
+Kötelező tétel - tökéletesen kell tudni!
+OCP, stratégia, TDD - a jegyzetet el kell olvasni hozzá
+Tételek
+2 tételsor van, mindegyikből húzni kell
+- Tervezési minták: Mindegyiket tudni kell, ami az órán elhangzott vagy benne van a   jegyzetben
+- Tervezési alapelvek
+Ismétlő tételek a PTI-s hallgatóknak + 2 könyv kikérdezése
+TDD, Scrum
+A PTI-seknek a plusz 2 könyv:
+XP+SCRUM:
+magyarul: crum-and-xp-from-the-trenches-hun/blob/master/ScrumAndXPFromTheTrenches_hu.txt
+ugyanez angolul:k
+ 
+KANBAN+SCRUM
+
+
+Ezen cikkek fordításával kiváltható a vizsga egyes részei:
+https://www.researchgate.net/publication/346592861_Cognitive_Code_Quality_Improvement_with_Pattern_Recognition_and_Recommendation_by_Examples
+https://www.researchgate.net/publication/339736138_Implementing_the_State-Space_Representation_by_the_Super_Operator_Design_Pattern
+https://www.researchgate.net/publication/341317467_Western_Canon_of_Software_Engineering_The_Abstract_Principles
+https://www.researchgate.net/publication/329602982_Case_studies_in_certified_software_development
+
+
+
+Vizsga részei:
+
+Közös: 
+
+3 könyv + jegyzet (Tiszta kód - Clean code, Túlélőkönyv programozóknak - The clean coder - Robert C. Martin (Uncle Bob), Head first design patterns)
+A Head First Design Pattern könyv olvasása kiváltható egy youtube videósorozat megnézésével, ennek első videója: https://www.youtube.com/watch?v=v9ejT8FO-7I
+Unit teszteket kell írni a vizsga elején
+GI és tanári: kiváltható fordítással
+Fordítás: Wikipedia oldal fordítás vagy a fentebb található négy cikk fordítása
+kiváltható vele gazdinfo és tanári szakon a 8 óra fordítással Tiszta kód fele, további 8 óra fordítással az unit teszt, PTI-n csak a Tiszta kód fele váltható ki 8 órányi fordítással vagy más fordításának ellenőrzésével
+Levelező fordítás koordinálása: ???
+Nappalis koordinátor: ???
+Nappalis és levelezős jelentkező táblázat: https://docs.google.com/spreadsheets/d/16E_FVMDvSbuWBc7Kap518ttA4TeBG58yWgR_bJAPSHs/edit
+
+
+Esszé:
+Követelmény:
+Témák:
+Szoftverkrízis - Legalább 1 oldalas jegyzet: 2.1 fejezet
+Összesen 2 oldal:
+OOP programozás - 3.1  fejezet 
+OOP hasznos megoldásai - 3.2 fejezet
+Joel on software blog bejegyzés - magyarul/angolul - Legalább 1 oldalas esszé, néhány ajánlott
+
+
+csupasz szakács, avagy hogy vesztette el a MS a világ elsőséget (nem pontos cím)
+funkspec könnyedén  (nem pontos cím)
+
+Tanári
+GI:
+Unit teszteket kell írni a vizsga elején
+GI és tanári: kiváltható fordítással
+Fordítás: Wikipedia oldal fordítás
+PTI : 
+könyv -  Kanban és Scrum - Mindkettőből a legjobbat - Henrik Kniberg és Mattias Skarin
+Scrum and XP from the trenches - Scrum és XP frontvonalból - https://github.com/zaki/scrum-and-xp-from-the-trenches-hun/blob/master/ScrumAndXPFromTheTrenches_hu.txt
+
+

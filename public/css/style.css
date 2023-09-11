@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background:coral;
+    color: brown;
+    line-height: 1.6;
+}
+
+ul{
+    list-style: none;
+    
+}
+/*Orai munka*/
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+
+}
+
+p {
+    margin: 10px 0px;
+}
+
+img{
+    width: 100%;
+}
+nav {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+table{
+    color: black;
+    width: 75rem;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+tr{
+    height: 3rem;
+}
+th {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+th, td{
+    width: calc(100%/8);
+    text-align: center;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(250, 184, 160);
+    color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed; 
+    top: 0px;
+    padding: 0 30px;
+}
+.navbar a {
+    color: black;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: coral 2px solid;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+.navbar ul .child{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+.navbar .logo {
+    font-weight: 400;
+}
+/*Orai munka kiegészítés*/
+.parent {
+    display: block;
+    width: 10rem;
+    text-align: center;
+}
+.submenu {
+    display: none;
+    
+}
+
+.parent:hover > .submenu {
+    display: block;
+    text-align: left;
+    width: 1rem;
+}
+li:hover > .submenu {
+    display:contents;
+}
+.child {
+    flex-direction: column;
+    background-color: rgb(250, 184, 160);
+    
+}
+.child li {
+    margin: 5px ;
+}
+.child li a {
+    color:white;
+}
+
+.child li a:hover{
+    color:brown;
+    border-bottom: 3px solid coral;
+}
+/* Header */
+
+.hero {
+    background-image: url('../img/pexels-cottonbro-studio-3992874.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: rgb(214, 62, 113);
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20%;
+}
+
+.hero .content h1 {
+    font-size: 55px;
+}
+
+.hero .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+.hero * {
+    z-index: 10;
+}
+
+/*Icons*/
+
+.icons {
+    padding: 30px;
+}
+
+.icons h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.icons i {
+    background-color: rgb(214, 62, 113);
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+/*Main section from Home */
+#about{
+    background-color: white;
+}
+
+
+
+/*Registration*/
+.article-forms{
+    background-color: rgb(250, 184, 160);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.article-forms > .forms {
+    
+    background-color: white;
+    margin:auto;
+    margin-top: 3rem;
+    max-width: 700px;
+    border-radius: 1rem;
+}
+
+.forms-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputs {
+    display: block;
+    min-width: calc(100%/2);
+    padding: 10px;
+}
+.inputs input {
+    display: block;
+    margin-left: 0.5rem;
+    max-width: 100%;
+    margin-right: 100px;
+    border: none;
+    outline: none;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+input:hover {
+    background-color: rgb(250, 184, 160);
+    cursor: pointer; 
+}
+
+.inputs label {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    padding-left: 0.5rem;
+}
+.inputs label:hover{
+    width: 12rem;
+    border-bottom: 2px solid coral;
+}
+.flex-container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+form > h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 10px;
+    margin: 10px;
+}
+hr{
+    width: 80%;
+    display: block;
+    margin: auto;
+    color: brown;
+    margin-top: 1rem;
+}
+.submit-btn > input {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    width: 80%;
+    border: none;
+    outline:none
+}
+#role {
+    display: block;
+    margin-left: 0.5rem;
+    margin-bottom: 3px;
+    max-width: 100%;
+    margin-right: 100px;
+    border: none;
+    outline: none;
+    height: 2rem;
+    border-radius: 5px;
+}
+#role:hover {
+    display: block;
+    margin-left: 0.5rem;
+    max-width: 100%;
+    margin-right: 100px;
+    border: none;
+    outline: none;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: rgb(250, 184, 160);
+    cursor: pointer; 
+}
+/*footer*/
+
+.footer{
+    background-color: rgb(250, 184, 160);
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    height: 12.5rem;
+}
+.footer a {
+    color:brown;
+}
+.footer a:hover{
+    color: coral;
+    cursor: pointer;
+}
+.footer p {
+    color: brown;
+}
+.footer .social > *{
+    margin-right: 1.8rem;
+}
+
+
+/*Css style for list of users*/
+
+
+.list_all_users{
+    background-color:rgb(250, 184, 160);
+    margin-left: auto;
+    margin-right: auto;
+}
+.list_all_users > h2 {
+    color: black;
+    text-align: center;
+    line-height: 5rem;
+    font-weight: bold;
+}
+.spacing{
+    height: 2rem;
+    background-color: rgb(250, 184, 160);
+}
+th.one_user{
+    width: calc(100%/9);
+    text-align: center;
+}
+td.one_user{
+    width: calc(100%/9);
+    text-align: center;
+}
+/*Css style for list one user*/
+
+.list_one_user > h2 {
+    color: black;
+    text-align: center;
+    line-height: 5rem;
+    font-weight: bold;
+}
+/*Css style for show one user*/
+.outer_one_user_detail{
+    background-color: rgb(250, 184, 160);
+    padding-top: 2rem;
+    height: auto;
+    
+}
+.one_user_detail{
+    background-color: white;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+}
+.one_user_detail > h1{
+    text-align: center;
+    line-height: 4rem;
+    font-weight: 400;
+    color: black;
+}
+.one_user_detail > h3, .one_user_detail > p{
+    text-align: center;
+    line-height: 3rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 0px;
+}
+.one_user_detail > p{
+    color: tomato;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    nav {
+        height: 11rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 50rem;
+    }
+    .navbar{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 683px;
+        flex-direction: column;
+        height: 7.5rem;
+        padding: 1,25rem;
+        min-height: 26%;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 20rem;
+        align-items: center;
+    }
+    .navbar a {
+        padding: 0.6rem 0.6rem;
+        margin: 0 0.1rem;
+    }
+    nav > ul {
+        flex-direction: column;
+    }
+    .navbar > nav > ul > li {
+        border-bottom: 1px dotted black;
+    }
+    .flex-items {
+        flex-direction: column;
+    }
+}
