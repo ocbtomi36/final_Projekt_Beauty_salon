@@ -20,7 +20,6 @@
     <?php
 
     include VIEWS_DIR.'header.php';
-    
     require PROTECTED_DIR.'content.php';
     include VIEWS_DIR.'footer.php';
 
