@@ -3,6 +3,7 @@ require PROTECTED_DIR.'menu.php';
 require_once CORE_DIR.'views.php';
 ?>
 
+
 <header class="hero">
         <div id="navbar" class="navbar">
             <h1 class="logo"><span class="text-primary">Beauty</span> Salon</h1>
