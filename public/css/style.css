@@ -17,7 +17,7 @@ ul{
     list-style: none;
     
 }
-/*Orai munka*/
+/*Overall definitions*/
 
 a{
     color: #333;
@@ -64,13 +64,16 @@ th, td{
     text-align: center;
 }
 
+input{
+    border: none;
+}
+
 /* Navbar */
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(250, 184, 160);
     color: black;
     opacity: 0.8;
     width: 100%;
@@ -79,8 +82,13 @@ th, td{
     top: 0px;
     padding: 0 30px;
 }
+.navbar:hover {
+    background-color: rgb(250, 184, 160);
+    color:black;
+}
 .navbar a {
     color: black;
+    font-weight: 600;
     padding: 10px 20px;
     margin: 0 5px;
 }
@@ -238,6 +246,7 @@ li:hover > .submenu {
 
 input:hover {
     background-color: rgb(250, 184, 160);
+    border: none;
     cursor: pointer; 
 }
 
@@ -398,6 +407,94 @@ td.one_user{
     color: tomato;
 }
 
+/* Css for login */
+
+.login_body{
+
+    background: url('../img/pexels-los-muertos-crew-8867162.jpg');
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.login_div{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 800;
+    border: 2px solid black;
+    height: 30rem;
+}
+.login_inside_div{
+    display: flex;
+    margin-top: 10%;
+    width: 80%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login_div h1{
+    color:black;
+    display: block;
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    text-align: center;
+    font-weight: 800;
+    line-height: 3rem;
+}
+.login_div form{
+    height: 20rem;
+    padding: 0 40px;
+}
+form .input_field{
+    height: 5rem;
+    position: relative;
+}
+.input_field > input {
+    display: block;
+    height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit > input {
+    width: 100%;
+    height: 1.8rem;
+    border-radius: 10px;
+    border: none;
+
+} 
+
+.signup_link > a {
+    display: block;
+    color: black;
+    width: 100%;
+    margin-top: 1rem;
+
+}
+.signup_link > a:hover {
+    display: block;
+    color: rgb(94, 30, 108);
+    width: 100%;
+    margin-top: 1rem;
+
+}
 /* Mobile */
 
 @media (max-width: 768px) {
