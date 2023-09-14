@@ -80,7 +80,11 @@ $menu =
     [
         'href' => BASE_URL.'start.php?U=fileupload',
         'menuTitle' => 'Fileupload'
-    ] 
+    ],
+    [
+        'href' => BASE_URL.'login.php?U=login',
+        'menuTitle' => 'Login'
+    ]  
 ]
 ;
 $menuCnt = count($menu);
