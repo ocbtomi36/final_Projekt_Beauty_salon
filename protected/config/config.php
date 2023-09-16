@@ -23,5 +23,5 @@ define('USERS_DIR',VIEWS_DIR.'users/');
 define('FILES_DIR',PROTECTED_DIR.'files/');
 define('FILTERS_DIR',VIEWS_DIR.'filters/');
 
-define('BASE_URL','http://localhost/Projekt_Beauty_Salon_Php/');
+define('BASE_URL','http://localhost/Copy_Projekt_Beauty_Salon/Projekt_Beauty_Salon_Php/');
 ?>
